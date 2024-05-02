@@ -34,6 +34,12 @@ Ghost AI Assistant is a command-line application that helps users generate cold 
     ```bash
     pip install -r requirements.txt
     ```
+5. Create a .env file and paste in the following env variables.
+   it's recommended however, if you want to use this app for production, don't share your env files on the internet.
+
+   GOOGLE_API_KEY=AIzaSyD2koNV4lTZQfHjbS89ctznFjQmhJVlP50
+   X-RapidAPI-KEY=668672dbf5msh447e3e120075196p1638c9jsn4168fab68a64
+   X-RapidAPI-Host=jsearch.p.rapidapi.com
 
 ## Usage
 
