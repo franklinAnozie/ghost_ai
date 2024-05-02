@@ -37,17 +37,23 @@ class Console(cmd.Cmd):
                 break
             else:
                 continue
+        print("Jobs retrieved successfully!")
+        num = 0
         for message in self.__messages.values():
             new_line = f"write me a cold mail using the following job details: {message.__dict__}. my personal info are: {personal_info.__dict__}"
             convo = ghost.start_chat(history=[])
             convo.send_message(new_line)
-            for num in range(count):
-                with open(f"sample{num}", "w") as file:
-                    file.write(convo.last.text)
+            with open(f"sample{num}", "w") as file:
+                file.write(convo.last.text)
+            num += 1
+        print("Mails Generated Sucessfully.")
 
     def do_clear(self, line):
-        os.system('cls')
+        os.system(line)
         return True
 
     def do_quit(self, line):
+        return True
+    
+    def do_exit(self, line):
         return True
