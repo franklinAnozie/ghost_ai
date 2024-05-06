@@ -13,7 +13,7 @@ Ghost AI Assistant is a command-line application that helps users generate cold 
 1. Clone the repository:
 
     ```bash
-    git clone <repository-url>
+    git clone https://github.com/franklinAnozie/ghost_ai.git
     ```
 
 2. Navigate to the project directory:
