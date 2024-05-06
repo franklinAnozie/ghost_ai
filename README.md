@@ -22,31 +22,17 @@ Ghost AI Assistant is a command-line application that helps users generate cold 
     cd ghost-ai
     ```
 
-3. Create and activate a virtual environment (optional but recommended):
+3. Build the docker container:
 
     ```bash
-    python3 -m venv env
-    source env/bin/activate
+    docker build -t new_app .
     ```
-
-4. Install dependencies:
-
-    ```bash
-    pip install -r requirements.txt
-    ```
-5. Create a .env file and paste in the following env variables.
-   it's recommended however, if you want to use this app for production, don't share your env files on the internet.
-
-   - GOOGLE_API_KEY=AIzaSyD2koNV4lTZQfHjbS89ctznFjQmhJVlP50
-   - X-RapidAPI-KEY=668672dbf5msh447e3e120075196p1638c9jsn4168fab68a64
-   - X-RapidAPI-Host=jsearch.p.rapidapi.com
-
 ## Usage
 
-1. Start the application by running `init.py`:
+1. Start the application by running the container
 
     ```bash
-    python -m main.__init__
+    docker run -it -v ./:/app/ new_app
     ```
 
 2. Follow the prompts to provide your personal information and specify your job search query.
