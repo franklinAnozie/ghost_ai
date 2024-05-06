@@ -34,6 +34,11 @@ Ghost AI Assistant is a command-line application that helps users generate cold 
     ```bash
     docker run -it -v ./:/app/ new_app
     ```
+    or 
+    ```bash
+    docker run -it new_app
+    ```
+    you may need to use sudo to gain administrative privileges
 
 2. Follow the prompts to provide your personal information and specify your job search query.
    
